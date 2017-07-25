@@ -1,0 +1,22 @@
+:root { font-size: 16px; }
+
+* { box-sizing: border-box; }
+
+body { margin: 0; padding: 0; }
+
+header { width: 100%; margin: 0; padding: 0; background-color: #2d4054; }
+header nav { width: 90%; max-width: 1440px; padding: 10px 0; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+header nav #logo { float: left; width: 100px; }
+header nav #logo img { height: 58px; }
+header nav ul { float: right; margin: 0; }
+header nav ul li { list-style: none; display: inline-block; margin: 0 30px; }
+header nav ul li a { color: #fff; text-decoration: none; font-size: 20px; }
+
+main { width: 90%; margin: 0 auto; padding: 0; max-width: 1440px; margin-top: 40px; }
+main h1 { text-align: center; font-size: 36px; line-height: 1.6; margin-bottom: 30px; }
+main p { font-size: 18px; line-height: 1.65; }
+main h3 { font-size: 24px; }
+main section { margin-bottom: 30px; }
+main section h2 { margin: 10px 0 20px; }
+
+/*# sourceMappingURL=style.css.map */
