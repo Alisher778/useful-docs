@@ -25,18 +25,29 @@ main h3 { font-size: 24px; }
 main section { margin-bottom: 30px; }
 main section h2 { margin: 10px 0 20px; }
 
+.project-proposal form { overflow: auto; }
 .project-proposal article { margin: 50px 0; }
 .project-proposal article div h5 { margin-bottom: 20px; }
 .project-proposal article div p { margin-bottom: 0; }
+.project-proposal .thead-inverse th { background-color: green; }
+
+.done, .edit { border: 1px solid; display: inline-block; padding: 10px 30px; margin-top: 20px; width: 125px; border-radius: 6px; cursor: pointer; }
+
+.edit { display: none; }
 
 @media screen and (max-width: 568px) { header #logo { width: 72px; }
   header nav ul { padding: 0; display: flex; width: 72%; justify-content: space-between; }
   header nav ul li { margin: 0; } }
-@media print and (min-width: 440px) { header { background-color: #fff; }
-  header nav #logo { width: 72px; margin: 0 auto; z-index: 2; }
+@media print and (min-width: 440px) { header { background-color: #fff; -webkit-print-color-adjust: exact; }
+  header nav #logo { margin: 0 auto; z-index: 2; }
   header nav #logo img { height: 100px; }
   header nav ul { display: none; }
   header nav::before { content: " "; position: absolute; border: 1px solid; width: 90%; }
   main { margin-top: 70px; }
   main label { display: none; }
-  main input { border: none; padding: 0; } }
+  main input { border: none; padding: 0; }
+  .project-proposal .edit.hide-on-print { opacity: 0; margin-top: 0; padding: 0; }
+  .project-proposal .calculate { display: none; }
+  .project-proposal h3 { text-align: center; font-size: 28px; line-height: 1.6; }
+  .project-proposal thead.thead-inverse { background-color: #000 !important; -webkit-print-color-adjust: exact; }
+  .project-proposal .thead-inverse th { background-color: #000; font-weight: normal; -webkit-print-color-adjust: exact; } }

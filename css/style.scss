@@ -46,6 +46,9 @@ main{  width: 90%; margin: 0 auto; padding: 0; max-width: 1440px; margin-top: 40
 }
 
 .project-proposal{
+	form{
+		overflow: auto;
+	}
 	article{
 		margin: 50px 0;
 
@@ -54,8 +57,11 @@ main{  width: 90%; margin: 0 auto; padding: 0; max-width: 1440px; margin-top: 40
 			p{ margin-bottom: 0;}
 		}
 	}
+	.thead-inverse th{background-color: green}
 }
 
+.done, .edit{border: 1px solid; display: inline-block; padding: 10px 30px; margin-top: 20px; width: 125px; border-radius: 6px; cursor: pointer;}
+.edit{display: none;}
 
 @media screen and (max-width: 568px){
 
@@ -72,20 +78,28 @@ main{  width: 90%; margin: 0 auto; padding: 0; max-width: 1440px; margin-top: 40
 
 @media print and (min-width: 440px){
 	
-	header{ background-color: #fff;
+	header{ background-color: #fff; -webkit-print-color-adjust: exact;
 		nav{
-			#logo{ width: 72px; margin: 0 auto; z-index: 2;
+			#logo{ margin: 0 auto; z-index: 2;
 				img{ height: 100px; }
 			}	
 			ul{ display: none;}
 			&::before{ content: " "; position: absolute; border: 1px solid;width: 90%;};
 		}
 	}
-
+	
 	main{
 		margin-top: 70px;
 		label{display: none;}
 		input{border: none; padding: 0;}
 	}
+	.project-proposal{
+		.edit.hide-on-print{ opacity: 0; margin-top: 0; padding: 0;}
+		.calculate{display: none;}
+		h3{text-align: center; font-size: 28px; line-height: 1.6;}
+		thead.thead-inverse{background-color: #000 !important; -webkit-print-color-adjust: exact;}
+		.thead-inverse th{background-color: #000; font-weight: normal; -webkit-print-color-adjust: exact;}
+	}
+	
 	
 }
