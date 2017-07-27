@@ -57,7 +57,8 @@ main{  width: 90%; margin: 0 auto; padding: 0; max-width: 1440px; margin-top: 40
 			p{ margin-bottom: 0;}
 		}
 	}
-	.thead-inverse th{background-color: green}
+	.thead-inverse th{background-color: #009688}
+	
 }
 
 .done, .edit{border: 1px solid; display: inline-block; padding: 10px 30px; margin-top: 20px; width: 125px; border-radius: 6px; cursor: pointer;}
@@ -95,9 +96,9 @@ main{  width: 90%; margin: 0 auto; padding: 0; max-width: 1440px; margin-top: 40
 	}
 	.project-proposal{
 		.edit.hide-on-print{ opacity: 0; margin-top: 0; padding: 0;}
+		.bg-color{background-color: #009688}
 		.calculate{display: none;}
 		h3{text-align: center; font-size: 28px; line-height: 1.6;}
-		thead.thead-inverse{background-color: #000 !important; -webkit-print-color-adjust: exact;}
 		.thead-inverse th{background-color: #000; font-weight: normal; -webkit-print-color-adjust: exact;}
 	}
 	

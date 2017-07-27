@@ -29,7 +29,7 @@ main section h2 { margin: 10px 0 20px; }
 .project-proposal article { margin: 50px 0; }
 .project-proposal article div h5 { margin-bottom: 20px; }
 .project-proposal article div p { margin-bottom: 0; }
-.project-proposal .thead-inverse th { background-color: green; }
+.project-proposal .thead-inverse th { background-color: #009688; }
 
 .done, .edit { border: 1px solid; display: inline-block; padding: 10px 30px; margin-top: 20px; width: 125px; border-radius: 6px; cursor: pointer; }
 
@@ -47,7 +47,7 @@ main section h2 { margin: 10px 0 20px; }
   main label { display: none; }
   main input { border: none; padding: 0; }
   .project-proposal .edit.hide-on-print { opacity: 0; margin-top: 0; padding: 0; }
+  .project-proposal .bg-color { background-color: #009688; }
   .project-proposal .calculate { display: none; }
   .project-proposal h3 { text-align: center; font-size: 28px; line-height: 1.6; }
-  .project-proposal thead.thead-inverse { background-color: #000 !important; -webkit-print-color-adjust: exact; }
   .project-proposal .thead-inverse th { background-color: #000; font-weight: normal; -webkit-print-color-adjust: exact; } }
